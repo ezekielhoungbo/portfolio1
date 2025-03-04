@@ -61,6 +61,7 @@ nav ul li a:hover {
 
 .about-content img {
   width: 150px;
+  height: auto;
   border-radius: 50%;
   border: 3px solid #00c3ff;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
