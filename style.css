@@ -126,3 +126,23 @@ footer {
   padding: 20px;
   background-color: #1e1e1e;
 }
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#animated-text {
+  display: inline-block; /* Ensures smooth animation */
+  font-size: 28px; /* Adjust size */
+  font-weight: bold;
+  color: #007bff; /* Adjust color */
+  opacity: 0; /* Start hidden */
+  animation: fadeInSlide 1.5s ease-out forwards;
+}
