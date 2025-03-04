@@ -1,85 +1,98 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio | Ezekiel Houngbo</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" type="module"></script>
 </head>
 <body>
-
   <header>
-    <div class="container">
-      <h1>Ezekiel Houngbo</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>Ezekiel Houngbo</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+<!--         <li><a href="#contact">Contact</a></li> -->
+      </ul>
+    </nav>
   </header>
 
   <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="about-content">
-        <img src="images/Me.jpg" alt="Ezekiel Houngbo">
-        <p>Hi! I’m Ezekiel Houngbo, and I have a passion for all things tech and creativity. I love playing video games, making video edits, and exploring different editing software to bring my ideas to life. Whether it's gaming or editing, I’m always looking for new ways to express creativity and have fun along the way!</p>
-      </div>
-    </div>
+    <h2>About Me</h2>
+    <p>Hi! I’m Ezekiel Houngbo, and I have a passion for all things tech and creativity. I love playing video games, making video edits, and exploring different editing software to bring my ideas to life. Technology fascinates me, and I enjoy learning new tools and techniques to improve my skills. Whether it's gaming or editing, I’m always looking for new ways to express creativity and have fun along the way!</p>
+    <img src="images/Me.jpg"></img>
   </section>
 
   <section id="portfolio">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <div class="filter-buttons">
+    <h2>Portfolio</h2>
+    <div class="filter-buttons">
         <button data-filter="all">All</button>
         <button data-filter="web">Video Editing</button>
         <button data-filter="graphic-design">Illustration Projects</button>
         <button data-filter="illustration">Group Project</button>
+    </div>
+    <div class="portfolio-grid">
+      <!-- Example Portfolio Items -->
+      <div class="portfolio-item" data-category="web">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/017mPkXGUDU?si=txQX50ZCX3_-Zmtr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Video Editing Project #1</h3>
+        <p>I used an editing software named “Davinci Resolve” to make a 44 second video edit of a popular anime “Frieren : Beyond journey's end” with the song “The Bird song” by Noah Floersch.
+</p>
+        <!--         <a href="#">View Project</a> -->
       </div>
-      
-      <div class="portfolio-grid">
-        <div class="portfolio-item" data-category="web">
-          <iframe src="https://www.youtube.com/embed/017mPkXGUDU?si=txQX50ZCX3_-Zmtr"></iframe>
-          <h3>Video Editing Project #1</h3>
-          <p>44-second edit of "Frieren: Beyond Journey's End" using Davinci Resolve.</p>
-        </div>
 
-        <div class="portfolio-item" data-category="graphic-design">
-          <img src="images/Iso.png" alt="Poly Art Project">
-          <h3>Poly Art Project</h3>
-          <p>Created using Adobe Animate for a school project.</p>
-        </div>
-
-        <div class="portfolio-item" data-category="illustration">
-          <img src="images/Projet Préféré.jpg" alt="Light Painting">
-          <h3>Light Painting</h3>
-          <p>A group project using LED lights to create art in mid-air.</p>
-        </div>
-        
-        <div class="portfolio-item" data-category="web">
-          <iframe src="https://www.youtube.com/embed/QI_Bqb50ovw?si=QJAGMRVlUKoqeUYF"></iframe>
-          <h3>Video Editing Project #2</h3>
-          <p>22-second edit of "The Apothecary Diaries" using Davinci Resolve.</p>
-        </div>
-        
-        <div class="portfolio-item" data-category="graphic-design">
-          <img src="images/Ezekiel-Vectoriel-Sommatif.png" alt="Vector Illustration">
-          <h3>Vector Illustration</h3>
-          <p>Vectorized self-portrait using Adobe Animate.</p>
-        </div>
+      <div class="portfolio-item" data-category="graphic-design">
+        <img src="images/Iso.png" alt="Graphic Design Project 1">
+        <h3>Poly Art Project</h3>
+        <p>For a school project, I was asked to make some poly art with the editing software “Adobe Animate”. I chose a picture of one of the video game characters in a game named “Valorant”. I then took that picture and turned it into triangles. I cropped the picture and moved the logo of the video game closer to his face.
+</p>
+        <!--         <a href="#">View Project</a> -->
       </div>
+
+      <div class="portfolio-item" data-category="illustration">
+        <img src="images/Projet Préféré.jpg" alt="Illustration Project 1">
+        <h3>Light Painting</h3>
+        <p>For a school project last year (11th grade), my teacher gave my group to make a light painting project where we would draw in the air with led lights and he'd take a picture of it. Since this was a group project, I was tasked with laying down on some chairs so that my colleagues could draw an outline of my body (the person throwing the basketball).</p>
+        <!--         <a href="#">View Project</a> -->
+      </div>
+
+      <!-- More Portfolio Items -->
+            <div class="portfolio-item" data-category="web">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/QI_Bqb50ovw?si=QJAGMRVlUKoqeUYF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Video Editing Project #2</h3>
+        <p>I used an editing software named “Davinci Resolve” to make a 22 second video edit of a popular anime “The Apothecary Diaries” with the song “Poison” by Bell Biv DeVoe.</p>
+        <!--         <a href="#">View Project</a> -->
+      </div>
+
+      <div class="portfolio-item" data-category="graphic-design">
+        <img src="images/Ezekiel-Vectoriel-Sommatif.png" alt="Graphic Design Project 2">
+        <h3>Vector Illustration</h3>
+        <p>For a school project last year (11th grade), my teacher gave me the task of taking a picture and reproducing it with adobe animate as a vector drawing.</p>
+        <!--         <a href="#">View Project</a> -->
+      </div>
+
+<!--       <div class="portfolio-item">
+        <img src="placeholder-image.svg" alt="Illustration Project 2">
+        <h3>Illustration Project 2</h3>
+        <p>Short description of the project.</p>
+                <a href="#">View Project</a>
+      </div> -->
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Ezekiel Houngbo</p>
+<!--   <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Reach out to me via email or social media.</p>
+    <div class="contact-info">
+      <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="156c7a60673b7078747c7955706d74786579703b767a78">[email&#160;protected]</a></p>
+      <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
+      <p>GitHub: <a href="#">Your GitHub Profile</a></p>
     </div>
+  </section>
+ -->
+  <footer>
+    <p>&copy; 2025 Ezekiel Houngbo</p>
   </footer>
-
-</body>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>
